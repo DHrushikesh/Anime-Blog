@@ -1,0 +1,178 @@
+*{
+    box-sizing: border-box; 
+}
+body{
+    scroll-behavior: smooth;
+    background-image: url('bg.png') ;
+    background-color:black;
+    color: white;
+}
+
+
+#home{
+    font-style: italic;
+    animation-name: title;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color : blueviolet;
+}
+@keyframes title {
+    0%{
+        scale: 0.8;
+    }    
+    100%{
+        scale: 1;
+    }
+}
+
+
+
+
+/* Navigation Controls */
+.navigationbar{
+    height: 60px;
+    margin: 10px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0px;
+    z-index: 999;
+}
+.navibuttons{
+    font-weight: 600;
+    font-size: x-large;
+    text-decoration: none;
+    text-shadow: 10px 10px 45px blueviolet;
+    height: 30px;
+    margin: 20px;
+    transition-property: all;
+    transition-duration: 1s;
+    z-index: 9;
+}
+.navibuttons:hover{
+    scale: 1.5;
+    text-shadow: 0px 0px 10px blueviolet;
+}
+
+
+/* contactme box */
+.contactme{
+    position:fixed;
+    scale: 0.9;
+    bottom: 50px;
+    right: 30px;
+    background-color: black;
+    border: 3px blueviolet solid;
+    border-radius: 30px;
+    transition-property: all;
+    transition-duration: 2s;
+}
+.contactme:hover{
+    scale: 1.2;
+    box-shadow: 0px 0px 10px blueviolet;
+}
+
+/* Styling Images when hovered */
+.image{
+    transform: rotate3d(0,0,10);
+    border: 2px solid blueviolet;
+    scale: 0.8;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+}
+.image:hover{
+    scale:1.1;
+    box-shadow: 0px 0px 10px blueviolet;
+}
+
+/* styling Videos */
+
+video{
+    border: 2px solid blueviolet;
+}
+
+
+/* Headings colors */
+.heading{
+    text-shadow: 10px 10px 10px blueviolet;
+    color: blueviolet;
+}
+
+
+/* anime box color */
+.content{
+    width: 1000px;
+    /* background-color: black; */
+}
+
+
+/* containes all anime blogs */
+.wholebox{
+    display: flex;
+    align-items: center;
+    flex-flow: column ;
+}
+
+/* contact box padding */
+.contactbox{
+    padding: 40px;
+}
+
+/* contact form colors */
+input,#watched{
+    background-color:black;
+    color: blueviolet;
+}
+
+/* Submit button */
+#submit{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: transparent;
+}
+
+
+/* FOr different Decvices till 500px */
+/* thought of using media queries but its harder for all the resolution so next assignment maybe */
+/* @media screen and (max-width:500px) {
+    h1{
+        position: relative;
+        left: 100px;
+    }
+    .navigationbar,.navibuttons{
+        display: none;
+    }
+    .contactme{
+        position: fixed;
+        bottom: 10px;
+        right: 50vw;
+    } 
+    .content{
+        position: relative;
+        left: 35px;
+        max-width: 500px;
+    }
+    .wholebox{
+        max-width: 500px;
+        position: relative;
+        left: 30px;
+    }
+    .startingaboutme{
+        max-width: 500px;
+        position: relative;
+        left: 30px;
+        }
+    footer{
+        width: 500px;
+    }
+} */
+
+/* Footer logos */
+#linkedin{
+    position: relative;
+    top: 9px;
+    left: 10px;
+}
